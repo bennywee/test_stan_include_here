@@ -1,6 +1,9 @@
 #include y-std-normal.stan
+data{
+  int n;
+}
 parameters {
-  real y;
+  vector[n] y;
 }
 model {
   y ~ my_std_normal();
